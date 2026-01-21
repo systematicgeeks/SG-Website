@@ -79,6 +79,12 @@ export function DiscoveryCall() {
         styleSheet.innerText = styles;
         document.head.appendChild(styleSheet);
 
+        // Add Calendly Script
+        const script = document.createElement("script");
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+
         // Animation Logic
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -106,6 +112,9 @@ export function DiscoveryCall() {
 
         return () => {
             document.head.removeChild(styleSheet);
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
             // Clean up observer if needed, though simpler to let page unmount handle
             clearTimeout(timeout);
         };
