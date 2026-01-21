@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
           className="contrast-125 w-auto h-8 grayscale brightness-200" 
         />
         <a 
-          href="https://systematicgeeks.com/strategy-session" 
+          href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" 
           className="hidden md:flex items-center gap-2 uppercase hover:text-mint transition-colors text-xs font-medium tracking-widest text-white"
         >
           Apply for strategy session

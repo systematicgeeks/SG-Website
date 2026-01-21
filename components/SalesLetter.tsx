@@ -29,7 +29,7 @@ export const SalesLetter: React.FC = () => {
         <FadeIn>
           <div className="md:p-12 lg:p-16 overflow-hidden bg-[#0A0A0A]/40 border-white/5 border-0 rounded-2xl p-8 relative shadow-2xl backdrop-blur-none group hover:border-white/10 transition-colors duration-500">
             {/* Grain Texture */}
-             <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bT1vY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI25vaXNlRmlsdGVyKSIgb3BhY2l0eT0iMC4wMyIvPjwvc3ZnPg==')] opacity-30 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bT1vY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI25vaXNlRmlsdGVyKSIgb3BhY2l0eT0iMC4wMyIvPjwvc3ZnPg==')] opacity-30 pointer-events-none"></div>
 
             <div className="z-10 text-left relative space-y-8">
               <h3 className="text-3xl text-white font-medium tracking-tight border-b border-white/5 pb-8 mb-8">Business Owners We Get It…</h3>
@@ -81,12 +81,12 @@ export const SalesLetter: React.FC = () => {
                     "You finally feel in control, not in the weeds"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4 group/item">
-                       <div className="w-6 h-6 rounded-full bg-mint/10 flex items-center justify-center text-mint shrink-0 mt-1 group-hover/item:bg-mint group-hover/item:text-black transition-colors"><CheckCircle size={16} /></div>
-                       <span className="text-neutral-300">
-                         {item.split(item.match(/(Already qualified leads|without you|in control)/)?.[0] || "")[0]}
-                         <span className="text-white">{item.match(/(Already qualified leads|without you|in control)/)?.[0]}</span>
-                         {item.split(item.match(/(Already qualified leads|without you|in control)/)?.[0] || "")[1]}
-                        </span>
+                      <div className="w-6 h-6 rounded-full bg-mint/10 flex items-center justify-center text-mint shrink-0 mt-1 group-hover/item:bg-mint group-hover/item:text-black transition-colors"><CheckCircle size={16} /></div>
+                      <span className="text-neutral-300">
+                        {item.split(item.match(/(Already qualified leads|without you|in control)/)?.[0] || "")[0]}
+                        <span className="text-white">{item.match(/(Already qualified leads|without you|in control)/)?.[0]}</span>
+                        {item.split(item.match(/(Already qualified leads|without you|in control)/)?.[0] || "")[1]}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -96,22 +96,22 @@ export const SalesLetter: React.FC = () => {
               </div>
 
               <div className="flex flex-col z-10 border-white/10 border-t mb-12 pt-12 relative gap-x-6 items-start gap-y-3">
-                 <div className="flex flex-col gap-4 items-center">
-                    <a href="https://systematicgeeks.com/strategy-session" className="group isolate inline-flex cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(110,231,183,0.35)] rounded-full relative shadow-[0_0_20px_rgba(110,231,183,0.25)] no-underline">
-                        <div className="absolute inset-0 pointer-events-none">
-                            <div className="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite] left-[-100%] top-[-100%]">
-                                <div className="absolute inset-0" style={{background: 'conic-gradient(from 0deg, transparent 0deg, transparent 270deg, #6EE7B7 360deg)'}}></div>
-                            </div>
-                        </div>
-                        <div className="absolute rounded-full inset-[1px] bg-[#050505] z-0 backdrop-blur-sm"></div>
-                        <div className="flex uppercase z-10 text-sm font-medium text-white tracking-wider w-full h-full py-4 px-8 relative items-center justify-center">
-                            Apply For your free strategy session
-                        </div>
-                    </a>
+                <div className="flex flex-col gap-4 items-center">
+                  <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="group isolate inline-flex cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(110,231,183,0.35)] rounded-full relative shadow-[0_0_20px_rgba(110,231,183,0.25)] no-underline">
+                    <div className="absolute inset-0 pointer-events-none">
+                      <div className="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite] left-[-100%] top-[-100%]">
+                        <div className="absolute inset-0" style={{ background: 'conic-gradient(from 0deg, transparent 0deg, transparent 270deg, #6EE7B7 360deg)' }}></div>
+                      </div>
+                    </div>
+                    <div className="absolute rounded-full inset-[1px] bg-[#050505] z-0 backdrop-blur-sm"></div>
+                    <div className="flex uppercase z-10 text-sm font-medium text-white tracking-wider w-full h-full py-4 px-8 relative items-center justify-center">
+                      Apply For your free strategy session
+                    </div>
+                  </a>
                 </div>
                 <div className="flex gap-3 opacity-60 items-center">
-                    <div className="h-px w-8 bg-neutral-600"></div>
-                    <p className="uppercase text-xs text-neutral-500 tracking-wider my-5">No Hard Sell. Just a Free Strategy Session.</p>
+                  <div className="h-px w-8 bg-neutral-600"></div>
+                  <p className="uppercase text-xs text-neutral-500 tracking-wider my-5">No Hard Sell. Just a Free Strategy Session.</p>
                 </div>
               </div>
             </div>
