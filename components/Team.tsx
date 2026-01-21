@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
 
 export const Team: React.FC = () => {
@@ -24,10 +25,10 @@ export const Team: React.FC = () => {
                         <p>We’re not done yet.</p>
                     </div>
                     <div className="mt-12">
-                        <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="text-mint border-mint hover:text-white transition-colors uppercase inline-flex items-center gap-2 group text-sm tracking-wider border-b pb-1">
+                        <Link to="/discovery-call" className="text-mint border-mint hover:text-white transition-colors uppercase inline-flex items-center gap-2 group text-sm tracking-wider border-b pb-1">
                             Book a strategy session
                             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
-                        </a>
+                        </Link>
                     </div>
                 </FadeIn>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
 
 export const Hero: React.FC = () => {
@@ -32,7 +33,7 @@ export const Hero: React.FC = () => {
 
         <FadeIn delay={600}>
           <div className="flex flex-col gap-4 pt-8 items-center">
-            <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="group isolate inline-flex cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(110,231,183,0.35)] rounded-full relative shadow-[0_0_20px_rgba(110,231,183,0.25)] no-underline">
+            <Link to="/discovery-call" className="group isolate inline-flex cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(110,231,183,0.35)] rounded-full relative shadow-[0_0_20px_rgba(110,231,183,0.25)] no-underline">
               <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin_4s_linear_infinite] left-[-100%] top-[-100%]">
                   <div className="absolute inset-0" style={{ background: 'conic-gradient(from 0deg, transparent 0deg, transparent 270deg, #6EE7B7 360deg)' }}></div>
@@ -42,7 +43,7 @@ export const Hero: React.FC = () => {
               <div className="flex uppercase cursor-pointer text-sm font-medium text-white tracking-wider w-full h-full z-10 py-4 px-8 relative items-center justify-center">
                 Apply For your free strategy session
               </div>
-            </a>
+            </Link>
             <span className="text-xs text-neutral-600 tracking-wide uppercase">Leave your card at home</span>
           </div>
         </FadeIn>

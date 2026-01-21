@@ -1,5 +1,6 @@
 import React from 'react';
 import { TrendingUp, MessageSquareDashed, Hourglass, BarChart2, Users, Box, Globe, Rocket, ArrowRight, Zap, Check, User, Mail, MessageCircle, Calendar, Linkedin, Bot } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
 
 export const Reasons: React.FC = () => {
@@ -172,11 +173,11 @@ export const Reasons: React.FC = () => {
                 </div>
 
                 <FadeIn delay={900} className="mt-20 text-center">
-                    <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="group relative inline-flex items-center gap-3 px-10 py-5 bg-[#6EE7B7] text-[#050505] rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#A7F3D0] transition-all duration-300 hover:shadow-[0_0_30px_rgba(110,231,183,0.4)] overflow-hidden">
+                    <Link to="/discovery-call" className="group relative inline-flex items-center gap-3 px-10 py-5 bg-[#6EE7B7] text-[#050505] rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#A7F3D0] transition-all duration-300 hover:shadow-[0_0_30px_rgba(110,231,183,0.4)] overflow-hidden">
                         <span className="relative z-10">Apply For Your Free Strategy Session</span>
                         <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1 transition-transform" />
                         <div className="group-hover:translate-y-0 transition-transform duration-300 bg-white/20 absolute top-0 right-0 bottom-0 left-0 translate-y-full"></div>
-                    </a>
+                    </Link>
                 </FadeIn>
             </div>
         </section>

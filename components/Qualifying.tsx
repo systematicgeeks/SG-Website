@@ -1,5 +1,6 @@
 import React from 'react';
 import { Activity, MousePointerClick, Files, ThermometerSnowflake, Rocket, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
 
 export const Qualifying: React.FC = () => {
@@ -54,10 +55,10 @@ export const Qualifying: React.FC = () => {
                 </div>
 
                 <FadeIn delay={700} className="mt-16 text-center pt-8 border-t border-white/5">
-                    <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="bg-mint text-black uppercase inline-flex items-center gap-3 hover:shadow-[0_0_20px_rgba(110,231,183,0.3)] transition-all duration-300 text-sm font-semibold tracking-wider rounded-full py-4 px-10">
+                    <Link to="/discovery-call" className="bg-mint text-black uppercase inline-flex items-center gap-3 hover:shadow-[0_0_20px_rgba(110,231,183,0.3)] transition-all duration-300 text-sm font-semibold tracking-wider rounded-full py-4 px-10">
                         Apply For Your Free Strategy Session
                         <ArrowRight size={18} />
-                    </a>
+                    </Link>
                 </FadeIn>
             </div>
         </section>

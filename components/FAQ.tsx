@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
 
 const items = [
@@ -33,9 +34,9 @@ export const FAQ: React.FC = () => {
                 </div>
 
                 <FadeIn className="mt-16 text-center">
-                    <a href="https://calendly.com/d/cm33-ntg-rqg/sg-strategy-session" className="bg-mint text-black font-semibold uppercase inline-flex items-center gap-2 text-sm tracking-wider rounded-full py-4 px-8 hover:shadow-[0_0_20px_rgba(110,231,183,0.3)] transition-all">
+                    <Link to="/discovery-call" className="bg-mint text-black font-semibold uppercase inline-flex items-center gap-2 text-sm tracking-wider rounded-full py-4 px-8 hover:shadow-[0_0_20px_rgba(110,231,183,0.3)] transition-all">
                         Apply For Your Free Strategy Session
-                    </a>
+                    </Link>
                     <p className="text-xs text-neutral-500 mt-4 uppercase tracking-wider">Leave Your Card At Home</p>
                 </FadeIn>
             </div>
