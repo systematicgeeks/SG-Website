@@ -79,7 +79,7 @@ export const TermsConditions: React.FC = () => {
                             </section>
 
                             <div className="pt-8 border-t border-white/5 text-sm text-neutral-500">
-                                <p>© 2025 Systematic Geeks. All Rights Reserved.</p>
+                                <p>© {new Date().getFullYear()} Systematic Geeks. All Rights Reserved.</p>
                             </div>
                         </div>
                     </FadeIn>

@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
         <footer className="z-10 bg-[#050505] border-white/5 border-t pt-12 pb-12 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 relative z-20">
                 <div className="text-xs text-neutral-500 text-center md:text-left">
-                    <p>© 2026 Systematic Geeks. All Rights Reserved.</p>
+                    <p>© {new Date().getFullYear()} Systematic Geeks. All Rights Reserved.</p>
                     <p className="mt-2">This site uses cookies for analytics and marketing</p>
                     <p className="mt-2">ABN: 60 191 663 623</p>
                 </div>
