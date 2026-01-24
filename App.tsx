@@ -2,6 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { DiscoveryCall } from './pages/DiscoveryCall';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsConditions } from './pages/TermsConditions';
 import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discovery-call" element={<DiscoveryCall />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
       </Routes>
     </Router>
   );
