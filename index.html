@@ -1,123 +1,166 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systematic Geeks</title>
-    <link rel="icon" href="https://storage.googleapis.com/msgsndr/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
-    <meta name="description" content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
-    <meta name="author" content="Jake & Kade" />
-    <meta name="keywords" content="Systematic geeks, AI Automation, Cold Outbound" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Systematic Geeks" />
-    <meta property="og:description" content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
-    <meta property="og:image" content="https://assets.cdn.filesafe.space/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript">
+    // SPA Path Restoration script
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <title>Systematic Geeks</title>
+  <link rel="icon"
+    href="https://storage.googleapis.com/msgsndr/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
+  <meta name="description"
+    content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
+  <meta name="author" content="Jake & Kade" />
+  <meta name="keywords" content="Systematic geeks, AI Automation, Cold Outbound" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Systematic Geeks" />
-    <meta name="twitter:description" content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
-    <meta name="twitter:image" content="https://assets.cdn.filesafe.space/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              mint: '#6EE7B7',
-              'bg-dark': '#050505',
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Systematic Geeks" />
+  <meta property="og:description"
+    content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
+  <meta property="og:image"
+    content="https://assets.cdn.filesafe.space/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Systematic Geeks" />
+  <meta name="twitter:description"
+    content="We build systems that grow SMBS - Plug and play automations that save time, close more deals, and streamline messy opperations." />
+  <meta name="twitter:image"
+    content="https://assets.cdn.filesafe.space/3Spc7nqCtqDR7KypUH1c/media/6490fd6d7696413c06865c98.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mint: '#6EE7B7',
+            'bg-dark': '#050505',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'spin-slow': 'spin 10s linear infinite',
+            'scroll-up': 'aura-scroll-up 60s linear infinite',
+            'scroll-down': 'aura-scroll-down 60s linear infinite',
+            'stack-breathe': 'stack-breathe 6s ease-in-out infinite',
+          },
+          keyframes: {
+            'aura-scroll-up': {
+              '0%': { transform: 'translateY(0)' },
+              '100%': { transform: 'translateY(-50%)' },
             },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+            'aura-scroll-down': {
+              '0%': { transform: 'translateY(-50%)' },
+              '100%': { transform: 'translateY(0)' },
             },
-            animation: {
-              'spin-slow': 'spin 10s linear infinite',
-              'scroll-up': 'aura-scroll-up 60s linear infinite',
-              'scroll-down': 'aura-scroll-down 60s linear infinite',
-              'stack-breathe': 'stack-breathe 6s ease-in-out infinite',
-            },
-            keyframes: {
-              'aura-scroll-up': {
-                '0%': { transform: 'translateY(0)' },
-                '100%': { transform: 'translateY(-50%)' },
-              },
-              'aura-scroll-down': {
-                '0%': { transform: 'translateY(-50%)' },
-                '100%': { transform: 'translateY(0)' },
-              },
-              'stack-breathe': {
-                 '0%, 100%': { transform: 'translateY(var(--idle-pos))' },
-                 '50%': { transform: 'translateY(calc(var(--idle-pos) * 1.12))' }
-              }
+            'stack-breathe': {
+              '0%, 100%': { transform: 'translateY(var(--idle-pos))' },
+              '50%': { transform: 'translateY(calc(var(--idle-pos) * 1.12))' }
             }
           }
         }
       }
-    </script>
-    <style>
-      :root {
-        --mint: #6EE7B7;
-        --mint-glow: rgba(110, 231, 183, 0.4);
-        --bg-dark: #050505;
-      }
-      body {
-        background-color: var(--bg-dark);
-        color: #e5e5e5;
-        -webkit-font-smoothing: antialiased;
-        font-family: 'Inter', sans-serif;
-      }
-      .glass {
-        background: rgba(255, 255, 255, 0.02);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-      }
-      .perspective-distant {
-        perspective: 1200px;
-      }
-      
-      /* Beam Animation */
-      .beam-v {
-        position: absolute;
-        top: 0; bottom: 0; width: 1px;
-        background: rgba(255, 255, 255, 0.05);
-        overflow: hidden;
-      }
-      .beam-v::after {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0; height: 150px;
-        background: linear-gradient(to bottom, transparent, var(--mint), transparent);
+    }
+  </script>
+  <style>
+    :root {
+      --mint: #6EE7B7;
+      --mint-glow: rgba(110, 231, 183, 0.4);
+      --bg-dark: #050505;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: #e5e5e5;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .perspective-distant {
+      perspective: 1200px;
+    }
+
+    /* Beam Animation */
+    .beam-v {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .beam-v::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to bottom, transparent, var(--mint), transparent);
+      transform: translateY(-100%);
+      animation: beam-drop 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes beam-drop {
+      0% {
         transform: translateY(-100%);
-        animation: beam-drop 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      }
-      @keyframes beam-drop {
-        0% { transform: translateY(-100%); opacity: 0; }
-        50% { opacity: 1; }
-        100% { transform: translateY(100vh); opacity: 0; }
+        opacity: 0;
       }
 
-      /* Hide scrollbar for clean UI */
-      ::-webkit-scrollbar {
-        width: 8px;
+      50% {
+        opacity: 1;
       }
-      ::-webkit-scrollbar-track {
-        background: #050505;
+
+      100% {
+        transform: translateY(100vh);
+        opacity: 0;
       }
-      ::-webkit-scrollbar-thumb {
-        background: #333;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #6EE7B7;
-      }
-    </style>
+    }
+
+    /* Hide scrollbar for clean UI */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #050505;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6EE7B7;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -128,10 +171,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
